@@ -1,0 +1,76 @@
+﻿<Window x:Class="WpfBklApp.HovedmenuMedlem"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfBklApp"
+        mc:Ignorable="d"
+        Title="HovedmenuMedlem" Height="912" Width="1368">
+    <Grid>
+        <Button Style="{StaticResource RoundButtonTemplate}" Content="     LOG AF" HorizontalAlignment="Left" VerticalAlignment="Top" Width="227" Margin="10,10,0,0" Height="50" FontSize="30" Background="#FF044C70" Foreground="White"/>
+        <Image Source="images/logud.png" Margin="12,8,1297.6,819.4" OpacityMask="Black"/>
+        <ScrollViewer Margin="15,559,705.6,10.4" Foreground="{x:Null}" BorderBrush="#FF6B90DA">
+            <StackPanel x:Name="sp" Height="853" Width="1083">
+                <Border CornerRadius="5" BorderThickness="1" BorderBrush="#FF64686A" Background="#FF64686A">
+                    <TextBlock FontSize="25
+                               " Margin="0.2,0,762.4,0" Background="Transparent" Foreground="White" Height="37" >Navn</TextBlock>
+                </Border>
+                <Border CornerRadius="5" BorderThickness="1" BorderBrush="#FF64686A" Background="#FF64686A">
+                    <TextBlock FontSize="25
+                               " Margin="0.2,0,762.4,0" Background="Transparent" Foreground="White" Height="37" >Navn</TextBlock>
+                </Border>
+                <Border CornerRadius="5" BorderThickness="1" BorderBrush="#FF64686A" Background="#FF64686A">
+                    <TextBlock FontSize="25
+                               " Margin="0.2,0,762.4,0" Background="Transparent" Foreground="White" Height="37" >Navn</TextBlock>
+                </Border>
+                <Border CornerRadius="5" BorderThickness="1" BorderBrush="#FF64686A" Background="#FF64686A">
+                    <TextBlock FontSize="25
+                               " Margin="0.2,0,762.4,0" Background="Transparent" Foreground="White" Height="37" >Navn</TextBlock>
+                </Border>
+                <Border CornerRadius="5" BorderThickness="1" BorderBrush="#FF64686A" Background="#FF64686A">
+                    <TextBlock FontSize="25
+                               " Margin="0.2,0,762.4,0" Background="Transparent" Foreground="White" Height="37" >Navn</TextBlock>
+                </Border>
+                <Border CornerRadius="5" BorderThickness="1" BorderBrush="#FF64686A" Background="#FF64686A">
+                    <TextBlock FontSize="25
+                               " Margin="0.2,0,762.4,0" Background="Transparent" Foreground="White" Height="37" >Navn</TextBlock>
+                </Border>
+                <Border CornerRadius="5" BorderThickness="1" BorderBrush="#FF64686A" Background="#FF64686A">
+                    <TextBlock FontSize="25
+                               " Margin="0.2,0,762.4,0" Background="Transparent" Foreground="White" Height="37" >Navn</TextBlock>
+                </Border>
+                <Border CornerRadius="5" BorderThickness="1" BorderBrush="#FF64686A" Background="#FF64686A">
+                    <TextBlock FontSize="25
+                               " Margin="0.2,0,762.4,0" Background="Transparent" Foreground="White" Height="37" >Navn</TextBlock>
+                </Border>
+                <Border CornerRadius="5" BorderThickness="1" BorderBrush="#FF64686A" Background="#FF64686A">
+                    <TextBlock FontSize="25                                " Margin="0.2,0,762.4,0" Background="Transparent" Foreground="White" Height="37" ><Run Text="Navn"/></TextBlock>
+                </Border>
+
+
+            </StackPanel>
+        </ScrollViewer>
+        <Label Content="Modtag forslag:" FontSize="30" HorizontalAlignment="Left" Margin="1101,573,0,0" VerticalAlignment="Top" Height="63" Width="225"/>
+        <Border BorderBrush="#FF6B90DA" CornerRadius="5" BorderThickness="3" HorizontalAlignment="Left" Height="235" Margin="683,573,0,0" VerticalAlignment="Top" Width="397"/>
+        <Grid>
+            <Polygon Margin="0,0,295.6,24.4"
+        HorizontalAlignment="Right"
+        VerticalAlignment="Bottom" Width="80" Height="53" Points="0,0 2,0 1,1" Fill="White" Stretch="Fill" StrokeThickness="3" Stroke="#FF6B90DA" />
+            <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="5" Margin="990,804,0,0" VerticalAlignment="Top" Width="71" Background="White"/>
+        </Grid>
+        <Slider HorizontalAlignment="Left" Margin="1161,686,0,0" VerticalAlignment="Top" Height="46" Width="106"/>
+        <Label Content="Ja" FontSize="30" HorizontalAlignment="Left" Margin="1106,667,0,0" VerticalAlignment="Top" Height="45"/>
+        <Label Content="Nej" FontSize="30" HorizontalAlignment="Left" Margin="1282,667,0,0" VerticalAlignment="Top" Height="51"/>
+        <Button Style="{StaticResource RoundButtonTemplate}" Margin="362,238,861.6,559.4" FontSize="25" Content="Sæt Vægt" Background="#FF044C70" Foreground="White"/>
+        <Button Style="{StaticResource RoundButtonTemplate}" Margin="362,135,861.6,664.4" FontSize="25" Content="Gem Vægt" Background="#FF044C70" Foreground="White"/>
+        <TextBlock FontSize="25" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="15,135,0,0" Height="79" Width="314" Background="#FF64686A" Foreground="White"/>
+        <TextBlock FontSize="25" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="15,241,0,0" Height="79" Width="314" Background="#FF64686A" Foreground="White"/>
+        <Border CornerRadius="5" BorderThickness="4" BorderBrush="#FF64686A" Margin="12,238,1029.6,559.4"/>
+        <Button Style="{StaticResource RoundButtonTemplate}" Margin="15,479,1154.6,346.4" FontSize="23" Content="Programpas" Background="#FF6B90DA" Foreground="White"/>
+        <Button Style="{StaticResource RoundButtonTemplate}" Margin="240,479,929.6,346.4" FontSize="23" Content="Ret programpas" Background="#FF6B90DA" Foreground="White"/>
+        <Button Style="{StaticResource RoundButtonTemplate}" Margin="464,479,705.6,346.4" FontSize="23" Content="Opret programpas" Background="#FF6B90DA" Foreground="White"/>
+        <Border CornerRadius="5" BorderThickness="4" BorderBrush="#FF64686A" Margin="12,133,1029.6,664.4"/>
+
+
+    </Grid>
+</Window>
