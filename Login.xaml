@@ -7,16 +7,16 @@
         mc:Ignorable="d"
         Title="Login" Height="912" Width="1368" ResizeMode="NoResize">
     <Grid>
-        <TextBox FontSize="30" HorizontalAlignment="Left" Height="76" Margin="457,410,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="454" BorderThickness="1,1,1,1"/>
-        <TextBox FontSize="30" HorizontalAlignment="Left" Height="76" Margin="457,553,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="454"/>
+        <TextBox x:Name="txtEmail" FontSize="30" HorizontalAlignment="Left" VerticalContentAlignment="Center" Height="76" Margin="457,410,0,0" VerticalAlignment="Top" Width="454" BorderThickness="1,1,1,1"/>
+        <PasswordBox x:Name="passKodeord" FontSize="30" HorizontalAlignment="Left" Height="76" VerticalContentAlignment="Center"  Margin="457,553,0,0" VerticalAlignment="Top" Width="454"/>
         <Rectangle Fill="#6B90DA" HorizontalAlignment="Left" Height="200" Margin="0,0,-0.4,0" Stroke="Black" VerticalAlignment="Top" Width="1362"/>
         <Image HorizontalAlignment="Center" Height="154" Margin="0,23,0,0" VerticalAlignment="Top" Width="245" Source="Images/logo.png"/>
 
-        <Button Style="{StaticResource RoundButtonTemplate}" Content="OK" HorizontalAlignment="Left" Height="57" Margin="753,684,0,0" VerticalAlignment="Top" Width="136" BorderBrush="#FF044C70" Background="#FF044C70" Foreground="White" FontSize="30"/>
+        <Button x:Name="goToMenu" IsDefault="True" Style="{StaticResource RoundButtonTemplate}" Content="OK" HorizontalAlignment="Left" Height="57" Margin="753,684,0,0" VerticalAlignment="Top" Width="136" BorderBrush="#FF044C70" Background="#FF044C70" Foreground="White" FontSize="30" Click="goToMenu_Click"/>
         <Button x:Name="goToOpretBruger" Style="{StaticResource RoundButtonTemplate}" Content="Opret Bruger" HorizontalAlignment="Left" Height="57" Margin="457,684,0,0" VerticalAlignment="Top" Width="207" Background="#FF044C70" Foreground="White" FontSize="30" Click="goToOpretBruger_Click"/>
 
-        <TextBlock HorizontalAlignment="Left" Height="36" Margin="457,371,0,0" TextWrapping="Wrap" Text="Brugernavn" VerticalAlignment="Top" Width="235" FontSize="20"/>
-        <TextBlock HorizontalAlignment="Left" Height="36" Margin="457,517,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235" FontSize="20"><Run Text="Adgangskode"/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="36" Margin="457,371,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Width="235" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Height="36" Margin="457,517,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235" FontSize="20" Text="Kodeord"/>
 
     </Grid>
 </Window>

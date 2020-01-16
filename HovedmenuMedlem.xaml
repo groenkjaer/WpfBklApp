@@ -64,7 +64,7 @@
         VerticalAlignment="Bottom" Width="80" Height="53" Points="0,0 2,0 1,1" Fill="White" Stretch="Fill" StrokeThickness="3" Stroke="#FF6B90DA" />
             <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="5" Margin="990,804,0,0" VerticalAlignment="Top" Width="71" Background="White"/>
         </Grid>
-        <Slider HorizontalAlignment="Left" Margin="1169,353,0,0" VerticalAlignment="Top" Height="46" Width="106" Grid.Row="1"/>
+        <Slider HorizontalAlignment="Left" IsSnapToTickEnabled="True" Margin="1169,352.8,0,0" VerticalAlignment="Top" Height="32" Width="106" Grid.Row="1" Maximum="1" SmallChange="1"/>
         <Label Content="Ja" FontSize="30" HorizontalAlignment="Left" Margin="1114,334,0,0" VerticalAlignment="Top" Height="45" Grid.Row="1"/>
         <Label Content="Nej" FontSize="30" HorizontalAlignment="Left" Margin="1290,334,0,0" VerticalAlignment="Top" Height="51" Grid.Row="1"/>
         <Button Style="{StaticResource RoundButtonTemplate}" Margin="362,82,861.6,433" FontSize="25" Content="Sæt Vægt" Background="#FF044C70" Foreground="White" Grid.Row="1"/>

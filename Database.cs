@@ -11,6 +11,17 @@ namespace WpfBklApp
     static class Database
     {
         private static SqlConnection conn;
+        private static int userId = 0;
+        private static string status;
+
+        public static int UserId
+        {
+            get { return userId; }
+        }
+        public static string Status
+        {
+            get { return status; }
+        }
 
         public static string OpretNyBruger(string fname, string lname, string email, string kodeord1, string kodeord2, string koen, string alder) //Fillips metode
         {
@@ -45,10 +56,38 @@ namespace WpfBklApp
             }
         }
 
-        //public static string Login()
-        //{
+        public static string Login(string email, string kodeord) //Fillips metode
+        {
+            conn = new SqlConnection(ConfigurationManager.ConnectionStrings["post"].ConnectionString);
 
-        //}
+            try
+            {
+                SqlCommand comm = new SqlCommand(string.Format("SELECT * FROM Medlemmer WHERE Email = '{0}'", email), conn);
+                conn.Open();
+                SqlDataReader reader = comm.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    if (kodeord == reader["Kodeord"].ToString())
+                    {
+                        userId = Convert.ToInt32(reader["Medlems_ID"]);
+                        string name = reader["Fornavn"].ToString();
+                        status = reader["Status"].ToString();
+                        conn.Close();
+                        return "Velkommen " + name;
+                    }
+                    else
+                    {
+                        return "Kodeord er forkert";
+                    }
+                }
+                return "Ukendt email";
+            }
+            catch (Exception e)
+            {
+                return "Kunne ikke oprette forbindelse, kontakt en administrator. Fejlkode: " + e.Message;
+            }
+        }
 
     }
 }

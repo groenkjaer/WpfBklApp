@@ -30,5 +30,23 @@ namespace WpfBklApp
             opret.Show();
             this.Close();
         }
+
+        private void goToMenu_Click(object sender, RoutedEventArgs e)
+        {
+            string s = Database.Login(txtEmail.Text, passKodeord.Password);
+            MessageBox.Show(s);
+            if (Database.UserId != 0 && Database.Status == "Instruktør")
+            {
+                Window hovedMenuAdmin = new HovedmenuAdmin();
+                hovedMenuAdmin.Show();
+                this.Close();
+            } 
+            else if (Database.UserId != 0)
+            {
+                Window hovedMenuMedlem = new HovedmenuMedlem();
+                hovedMenuMedlem.Show();
+                this.Close();
+            }
+        }
     }
 }
