@@ -23,5 +23,12 @@ namespace WpfBklApp
         {
             InitializeComponent();
         }
+
+        private void goToOpretBruger_Click(object sender, RoutedEventArgs e)
+        {
+            Window opret = new OpretMedlem();
+            opret.Show();
+            this.Close();
+        }
     }
 }

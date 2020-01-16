@@ -24,14 +24,23 @@ namespace WpfBklApp
             InitializeComponent();
         }
 
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void opretBruger_Click(object sender, RoutedEventArgs e)
         {
+            string s = Database.OpretNyBruger(txtFirstname.Text, txtLastname.Text, txtEmail.Text, passKodeord.Password, passKodeordGentag.Password, comboBoxKoen.Text, txtAlder.Text);
+            MessageBox.Show(s);
 
+            if (s == "Du har nu oprettet en bruger")
+            {
+                Window login = new Login();
+                login.Show();
+                this.Close();
+            }
         }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            Window login = new Login();
+            login.Show();
+            this.Close();
         }
     }
 }

@@ -5,31 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfBklApp"
         mc:Ignorable="d"
-        Title="OpretMedlem" Height="912" Width="1368" WindowState="Maximized">
+        Title="OpretMedlem" Height="912" Width="1368" WindowState="Maximized" ResizeMode="NoResize">
     <Grid>
         <Label Content="Fornavn:" HorizontalAlignment="Left" Margin="132,314,0,0" VerticalAlignment="Top" Foreground="#FF64686A" Height="45" Width="156" FontSize="20"/>
         <Label Content="Efternavn:" HorizontalAlignment="Left" Margin="132,391,0,0" VerticalAlignment="Top" Foreground="#FF64686A" Height="45" Width="169" FontSize="20"/>
         <Label Content="Email:" HorizontalAlignment="Left" Margin="132,463,0,0" VerticalAlignment="Top" Foreground="#FF64686A" Height="45" Width="98" FontSize="20"/>
-        <Label Content="Adgangskod:" HorizontalAlignment="Left" Margin="132,537,0,0" VerticalAlignment="Top" Foreground="#FF64686A" Height="44" Width="189" FontSize="20"/>
+        <Label Content="Adgangskode:" HorizontalAlignment="Left" Margin="132,537,0,0" VerticalAlignment="Top" Foreground="#FF64686A" Height="44" Width="189" FontSize="20"/>
         <Label Content="Gentag adgangskode:" HorizontalAlignment="Left" Margin="132,610,0,0" VerticalAlignment="Top" Foreground="#FF64686A" Height="45" Width="300" FontSize="20"/>
         <Label Content="Alder:" HorizontalAlignment="Left" Margin="132,754,0,0" VerticalAlignment="Top" Foreground="#FF64686A" Height="45" Width="95" FontSize="20"/>
-        <TextBox HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Width="853" Margin="374,321,0,0" Background="#FF64686A" FontSize="20" BorderBrush="White" CaretBrush="White" Foreground="White" SelectionBrush="White"/>
-        <TextBox HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Width="853" Margin="374,392,0,0" Background="#FF64686A" FontSize="20" BorderBrush="White" CaretBrush="White" Foreground="White" SelectionBrush="White"/>
-        <TextBox HorizontalAlignment="Left" Height="41" TextWrapping="Wrap" VerticalAlignment="Top" Width="853" Margin="374,464,0,0" Background="#FF64686A" FontSize="20" BorderBrush="White" CaretBrush="White" Foreground="White" SelectionBrush="White"/>
-        <TextBox HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Margin="374,754,0,0" RenderTransformOrigin="0.5,0.5" Background="#FF64686A" Foreground="White" FontSize="20" BorderBrush="White" CaretBrush="White" SelectionBrush="White"/>
-        <Button Content="Opret Bruger" HorizontalAlignment="Left" VerticalAlignment="Top" Width="138" Margin="861,778,0,0" Click="Button_Click" Height="54" Foreground="White" Background="#FF044C70" FontSize="20"/>
-        <Button Content="Annuller" HorizontalAlignment="Left" VerticalAlignment="Top" Width="137" Margin="1146,778,0,0" Height="54" Foreground="White" Background="#FF044C70" FontSize="20"/>
+        <TextBox x:Name="txtFirstname" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Width="853" Margin="374,321,0,0" Background="#FF64686A" FontSize="20" BorderBrush="White" CaretBrush="White" Foreground="White" SelectionBrush="White"/>
+        <TextBox x:Name="txtLastname" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Width="853" Margin="374,392,0,0" Background="#FF64686A" FontSize="20" BorderBrush="White" CaretBrush="White" Foreground="White" SelectionBrush="White"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="41" TextWrapping="Wrap" VerticalAlignment="Top" Width="853" Margin="374,464,0,0" Background="#FF64686A" FontSize="20" BorderBrush="White" CaretBrush="White" Foreground="White" SelectionBrush="White"/>
+        <TextBox x:Name="txtAlder" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Margin="374,754,0,0" RenderTransformOrigin="0.5,0.5" Background="#FF64686A" Foreground="White" FontSize="20" BorderBrush="White" CaretBrush="White" SelectionBrush="White"/>
+        <Button x:Name="opretBruger" Content="Opret Bruger" HorizontalAlignment="Left" VerticalAlignment="Top" Width="138" Margin="861,737,0,0" Height="54" Foreground="White" Background="#FF044C70" FontSize="20" Click="opretBruger_Click"/>
+        <Button Content="Annuller" HorizontalAlignment="Left" VerticalAlignment="Top" Width="137" Margin="1146,737,0,0" Height="54" Foreground="White" Background="#FF044C70" FontSize="20" Click="Button_Click"/>
 
 
-        <ComboBox HorizontalAlignment="Left" Margin="375,684,0,0" VerticalAlignment="Top" Width="178" SelectionChanged="ComboBox_SelectionChanged" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Height="39">
-            <ComboBoxItem Content="Mand" HorizontalAlignment="Left" Width="252" Background="#FF64686A" Foreground="White" FontSize="20" Margin="0,0,-76,0"/>
-            <ComboBoxItem Content="Kvinde" HorizontalAlignment="Left" Width="255" Background="#FF64686A" Foreground="White" FontSize="20" Margin="0,0,-79,0"/>
-            <ComboBoxItem Content="Andet" HorizontalAlignment="Left" Width="254" Background="#FF64686A" Foreground="White" FontSize="20" Margin="0,0,-78,0"/>
+        <ComboBox x:Name="comboBoxKoen" HorizontalAlignment="Left" Margin="375,684,0,0" VerticalAlignment="Top" Width="178" Background="#FF64686A" BorderBrush="{x:Null}" Foreground="Black" Height="39" FontSize="25">
+            <ComboBoxItem x:Name="Mand" Content="Mand" HorizontalAlignment="Left" Width="252" Background="#FF64686A" Foreground="White" FontSize="20" Margin="0,0,-76,0"/>
+            <ComboBoxItem x:Name="Kvinde" Content="Kvinde" HorizontalAlignment="Left" Width="255" Background="#FF64686A" Foreground="White" FontSize="20" Margin="0,0,-79,0"/>
+            <ComboBoxItem x:Name="Andet" Content="Andet" HorizontalAlignment="Left" Width="254" Background="#FF64686A" Foreground="White" FontSize="20" Margin="0,0,-78,0"/>
         </ComboBox>
-        <Label Content="Køn" HorizontalAlignment="Left" Margin="387,684,0,0" VerticalAlignment="Top" Height="38" Width="71" RenderTransformOrigin="0.543,0.651" FontSize="20"/>
+        <Label x:Name="labelKoen" Content="Køn" HorizontalAlignment="Left" Foreground="#FF64686A" Margin="132,686,0,0" VerticalAlignment="Top" Height="38" Width="71" RenderTransformOrigin="0.543,0.651" FontSize="20"/>
         <Image Source="images/banner.jpg" Margin="132,0,78.6,575.4"/>
-        <PasswordBox HorizontalAlignment="Left" Margin="374,537,0,0" VerticalAlignment="Top" Height="44" Width="852" Background="#FF64686A" Foreground="White" FontSize="20"/>
-        <PasswordBox HorizontalAlignment="Left" Margin="374,611,0,0" VerticalAlignment="Top" Height="44" Width="852" Background="#FF64686A" Foreground="White" FontSize="20"/>
+        <PasswordBox x:Name="passKodeord" HorizontalAlignment="Left" Margin="374,537,0,0" VerticalAlignment="Top" Height="44" Width="852" Background="#FF64686A" Foreground="White" FontSize="20"/>
+        <PasswordBox x:Name="passKodeordGentag" HorizontalAlignment="Left" Margin="374,611,0,0" VerticalAlignment="Top" Height="44" Width="852" Background="#FF64686A" Foreground="White" FontSize="20"/>
 
     </Grid>
 </Window>
