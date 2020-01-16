@@ -5,12 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfBklApp"
         mc:Ignorable="d"
-        Title="HovedmenuMedlem" Height="912" Width="1368">
+        Title="HovedmenuMedlem" Height="785.2" Width="1368" ResizeMode="NoResize">
     <Grid>
-        <Button Style="{StaticResource RoundButtonTemplate}" Content="     LOG AF" HorizontalAlignment="Left" VerticalAlignment="Top" Width="227" Margin="10,10,0,0" Height="50" FontSize="30" Background="#FF044C70" Foreground="White"/>
-        <Image Source="images/logud.png" Margin="12,8,1297.6,819.4" OpacityMask="Black"/>
-        <ScrollViewer Margin="15,559,705.6,10.4" Foreground="{x:Null}" BorderBrush="#FF6B90DA">
-            <StackPanel x:Name="sp" Height="853" Width="1083">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="53*"/>
+            <RowDefinition Height="199*"/>
+        </Grid.RowDefinitions>
+        <Button Style="{StaticResource RoundButtonTemplate}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="227" Margin="10,10,0,0" Height="50" FontSize="30" Background="#FF044C70" Foreground="White">
+            <Label Content="Log ud" FontSize="25" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        </Button>
+        <Image Source="images/logud.png" Margin="12,8,1297.6,151" OpacityMask="Black"/>
+        <ScrollViewer Margin="15,310,705.6,100" Foreground="{x:Null}" BorderBrush="#FF6B90DA" Grid.Row="1">
+            <StackPanel x:Name="sp" Height="313" Width="641">
                 <Border CornerRadius="5" BorderThickness="1" BorderBrush="#FF64686A" Background="#FF64686A">
                     <TextBlock FontSize="25
                                " Margin="0.2,0,762.4,0" Background="Transparent" Foreground="White" Height="37" >Navn</TextBlock>
@@ -50,26 +56,25 @@
 
             </StackPanel>
         </ScrollViewer>
-        <Label Content="Modtag forslag:" FontSize="30" HorizontalAlignment="Left" Margin="1101,573,0,0" VerticalAlignment="Top" Height="63" Width="225"/>
-        <Border BorderBrush="#FF6B90DA" CornerRadius="5" BorderThickness="3" HorizontalAlignment="Left" Height="235" Margin="683,573,0,0" VerticalAlignment="Top" Width="397"/>
-        <Grid>
+        <Label Content="Modtag forslag:" FontSize="30" HorizontalAlignment="Left" Margin="1109,240,0,0" VerticalAlignment="Top" Height="63" Width="225" Grid.Row="1"/>
+        <Border BorderBrush="#FF6B90DA" CornerRadius="5" BorderThickness="3" HorizontalAlignment="Left" Height="235" Margin="691,240,0,0" VerticalAlignment="Top" Width="397" Grid.Row="1"/>
+        <Grid Margin="845,475,15.6,122" Grid.Row="1">
             <Polygon Margin="0,0,295.6,24.4"
         HorizontalAlignment="Right"
         VerticalAlignment="Bottom" Width="80" Height="53" Points="0,0 2,0 1,1" Fill="White" Stretch="Fill" StrokeThickness="3" Stroke="#FF6B90DA" />
             <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="5" Margin="990,804,0,0" VerticalAlignment="Top" Width="71" Background="White"/>
         </Grid>
-        <Slider HorizontalAlignment="Left" Margin="1161,686,0,0" VerticalAlignment="Top" Height="46" Width="106"/>
-        <Label Content="Ja" FontSize="30" HorizontalAlignment="Left" Margin="1106,667,0,0" VerticalAlignment="Top" Height="45"/>
-        <Label Content="Nej" FontSize="30" HorizontalAlignment="Left" Margin="1282,667,0,0" VerticalAlignment="Top" Height="51"/>
-        <Button Style="{StaticResource RoundButtonTemplate}" Margin="362,238,861.6,559.4" FontSize="25" Content="Sæt Vægt" Background="#FF044C70" Foreground="White"/>
-        <Button Style="{StaticResource RoundButtonTemplate}" Margin="362,135,861.6,664.4" FontSize="25" Content="Gem Vægt" Background="#FF044C70" Foreground="White"/>
-        <TextBlock FontSize="25" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="15,135,0,0" Height="79" Width="314" Background="#FF64686A" Foreground="White"/>
-        <TextBlock FontSize="25" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="15,241,0,0" Height="79" Width="314" Background="#FF64686A" Foreground="White"/>
-        <Border CornerRadius="5" BorderThickness="4" BorderBrush="#FF64686A" Margin="12,238,1029.6,559.4"/>
-        <Button Style="{StaticResource RoundButtonTemplate}" Margin="15,479,1154.6,346.4" FontSize="23" Content="Programpas" Background="#FF6B90DA" Foreground="White"/>
-        <Button Style="{StaticResource RoundButtonTemplate}" Margin="240,479,929.6,346.4" FontSize="23" Content="Ret programpas" Background="#FF6B90DA" Foreground="White"/>
-        <Button Style="{StaticResource RoundButtonTemplate}" Margin="464,479,705.6,346.4" FontSize="23" Content="Opret programpas" Background="#FF6B90DA" Foreground="White"/>
-        <Border CornerRadius="5" BorderThickness="4" BorderBrush="#FF64686A" Margin="12,133,1029.6,664.4"/>
+        <Slider HorizontalAlignment="Left" Margin="1169,353,0,0" VerticalAlignment="Top" Height="46" Width="106" Grid.Row="1"/>
+        <Label Content="Ja" FontSize="30" HorizontalAlignment="Left" Margin="1114,334,0,0" VerticalAlignment="Top" Height="45" Grid.Row="1"/>
+        <Label Content="Nej" FontSize="30" HorizontalAlignment="Left" Margin="1290,334,0,0" VerticalAlignment="Top" Height="51" Grid.Row="1"/>
+        <Button Style="{StaticResource RoundButtonTemplate}" Margin="362,82,861.6,433" FontSize="25" Content="Sæt Vægt" Background="#FF044C70" Foreground="White" Grid.Row="1"/>
+        <Button Style="{StaticResource RoundButtonTemplate}" Margin="362,135,861.6,542" FontSize="25" Content="Gem Vægt" Background="#FF044C70" Foreground="White" Grid.RowSpan="2"/>
+        <Button Style="{StaticResource RoundButtonTemplate}" Margin="15,202,1154.6,0" FontSize="23" Content="Programpas" Background="#FF6B90DA" Foreground="White" Height="57" VerticalAlignment="Top" Grid.Row="1"/>
+        <Button Style="{StaticResource RoundButtonTemplate}" Margin="240,202,929.6,0" FontSize="23" Content="Ret programpas" Background="#FF6B90DA" Foreground="White" Height="57" VerticalAlignment="Top" Grid.Row="1"/>
+        <Button Style="{StaticResource RoundButtonTemplate}" Margin="464,202,705.6,0" FontSize="21" Content="Opret programpas" Background="#FF6B90DA" Foreground="White" Height="57" VerticalAlignment="Top" Grid.Row="1"/>
+        <Image Source="images/logud.png" Margin="21,13,1297.6,104"/>
+        <TextBox FontSize="25" HorizontalAlignment="Left" Height="79" Margin="21,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="247" Background="#FF64686A" Foreground="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.RowSpan="2"/>
+        <TextBox FontSize="25" HorizontalAlignment="Left" Height="79" Margin="21,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="247" Background="#FF64686A" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="1"/>
 
 
     </Grid>

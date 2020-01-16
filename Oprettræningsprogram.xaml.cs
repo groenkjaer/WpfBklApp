@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace WpfBklApp
 {
     /// <summary>
-    /// Interaction logic for HovedmenuAdmin.xaml
+    /// Interaction logic for Oprettræningsprogram.xaml
     /// </summary>
-    public partial class HovedmenuAdmin : Window
+    public partial class Oprettræningsprogram : Window
     {
-        public HovedmenuAdmin()
+        public Oprettræningsprogram()
         {
             InitializeComponent();
         }

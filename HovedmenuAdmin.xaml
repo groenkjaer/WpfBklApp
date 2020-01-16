@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfBklApp"
         mc:Ignorable="d"
-        Title="HovedmenuAdmin" Height="912" Width="1368">
-    <Grid Margin="10,10,-10.4,-9.6">
-        <Button Style="{StaticResource RoundButtonTemplate}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="227" Margin="10,10,0,0" Height="50" Click="Button_Click" FontSize="30" Background="#FF044C70" Foreground="White">
+        Title="HovedmenuAdmin" Height="785.2" Width="1368" ResizeMode="NoResize">
+    <Grid Margin="10,10,-10.4,-0.2">
+        <Button Style="{StaticResource RoundButtonTemplate}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="227" Margin="10,10,0,0" Height="50" FontSize="30" Background="#FF044C70" Foreground="White">
             <Image Source="images/logud.png" OpacityMask="Black" Height="50" Width="216" HorizontalAlignment="Left"/>
         </Button>
-        
+
         <Label Content="Liste over medlemmer:" HorizontalAlignment="Left" Margin="12,68,0,0" VerticalAlignment="Top" FontSize="30" Width="314"/>
         <ScrollViewer Margin="12,123,1041.6,10.4" Foreground="{x:Null}" BorderBrush="#FF6B90DA">
             <StackPanel x:Name="sp" Height="853" Width="1083">
@@ -42,91 +42,28 @@
 
             </StackPanel>
         </ScrollViewer>
-        <Button Style="{StaticResource RoundButtonTemplate}" Margin="362,123,791,652" FontSize="20" Background="#FF044C70">
+        <Button Style="{StaticResource RoundButtonTemplate}" Margin="346,123,0,0" FontSize="20" Background="#FF044C70" HorizontalAlignment="Left" Width="206" Height="89" VerticalAlignment="Top">
             <TextBlock TextWrapping="Wrap" Foreground="White">Se medlemmets informationer</TextBlock>
         </Button>
-        <ScrollViewer Margin="346,552,618.6,95.4" Foreground="Black" BorderBrush="#FFCA1616" OpacityMask="#FFEE0A0A">
-            <TextBlock HorizontalAlignment="Left" Margin="344,471,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="316" Width="474"/>
-        </ScrollViewer>
-        <Button Style="{StaticResource RoundButtonTemplate}" Content="Giv forslag" FontSize="35" HorizontalAlignment="Left" Margin="363,810,0,0" VerticalAlignment="Top" Width="208" Height="62" Foreground="White" Background="#FF044C70"/>
-        <Label Content="Giv forslag:" FontSize="30" HorizontalAlignment="Left" Margin="346,502,0,0" VerticalAlignment="Top"/>
-        <Border BorderBrush="#FF6B90DA" CornerRadius="5" BorderThickness="3" HorizontalAlignment="Left" Height="235" Margin="346,552,0,0" VerticalAlignment="Top" Width="397"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="393" Margin="767,437,0,0" VerticalAlignment="Top" Width="585">
-            <Border BorderBrush="Black" BorderThickness="1" Margin="0.2,0.2,0,-0.8"/>
+        <Button Style="{StaticResource RoundButtonTemplate}" Content="Giv forslag" FontSize="35" HorizontalAlignment="Left" Margin="374,660,0,0" VerticalAlignment="Top" Width="208" Height="62" Foreground="White" Background="#FF044C70"/>
+        <Label Content="Giv forslag:" FontSize="30" HorizontalAlignment="Left" Margin="357,352,0,0" VerticalAlignment="Top"/>
+        <Border BorderBrush="#FF6B90DA" CornerRadius="5" BorderThickness="3" HorizontalAlignment="Left" Height="235" Margin="337,401,0,0" VerticalAlignment="Top" Width="397">
+            <ScrollViewer Margin="-4.2,-3.2,-3.4,-2" Foreground="Black" BorderBrush="#FFCA1616" OpacityMask="#FFEE0A0A">
+                <TextBlock HorizontalAlignment="Left" Margin="344,471,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="316" Width="474"/>
+            </ScrollViewer>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="42" Margin="767,438,0,0" VerticalAlignment="Top" Width="118" Background="#FF6B90DA"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="42" Margin="885,438,0,0" VerticalAlignment="Top" Width="118" Background="#FF6B90DA"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="42" Margin="1003,438,0,0" VerticalAlignment="Top" Width="110" Background="#FF6B90DA"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="42" Margin="1113,438,0,0" VerticalAlignment="Top" Width="80" Background="#FF6B90DA"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="42" Margin="1193,438,0,0" VerticalAlignment="Top" Width="80" Background="#FF6B90DA"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="42" Margin="1273,438,0,0" VerticalAlignment="Top" Width="79" Background="#FF6B90DA"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="90" Margin="767,479,0,0" VerticalAlignment="Top" Width="118"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="90" Margin="885,479,0,0" VerticalAlignment="Top" Width="118"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="90" Margin="1003,479,0,0" VerticalAlignment="Top" Width="110"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="90" Margin="1113,479,0,0" VerticalAlignment="Top" Width="80"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="90" Margin="1193,479,0,0" VerticalAlignment="Top" Width="80"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="90" Margin="1272,479,0,0" VerticalAlignment="Top" Width="80"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="42" Margin="767,569,0,0" VerticalAlignment="Top" Width="118" Background="#FF6B90DA"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="42" Margin="885,569,0,0" VerticalAlignment="Top" Width="118" Background="#FF6B90DA"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="42" Margin="1003,569,0,0" VerticalAlignment="Top" Width="110" Background="#FF6B90DA"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="42" Margin="1113,569,0,0" VerticalAlignment="Top" Width="80" Background="#FF6B90DA"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="42" Margin="1193,569,0,0" VerticalAlignment="Top" Width="80" Background="#FF6B90DA"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="42" Margin="1273,569,0,0" VerticalAlignment="Top" Width="79" Background="#FF6B90DA"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="90" Margin="767,610,0,0" VerticalAlignment="Top" Width="118"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="90" Margin="885,610,0,0" VerticalAlignment="Top" Width="118"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="90" Margin="1003,610,0,0" VerticalAlignment="Top" Width="110"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="90" Margin="1113,610,0,0" VerticalAlignment="Top" Width="80"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="90" Margin="1193,610,0,0" VerticalAlignment="Top" Width="80"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="90" Margin="1272,610,0,0" VerticalAlignment="Top" Width="80"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="42" Margin="768,699,0,0" VerticalAlignment="Top" Width="117" Background="#FF6B90DA"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="42" Margin="885,699,0,0" VerticalAlignment="Top" Width="118" Background="#FF6B90DA"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="42" Margin="1003,699,0,0" VerticalAlignment="Top" Width="110" Background="#FF6B90DA"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="42" Margin="1113,699,0,0" VerticalAlignment="Top" Width="79" Background="#FF6B90DA"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="42" Margin="1192,699,0,0" VerticalAlignment="Top" Width="80" Background="#FF6B90DA"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="42" Margin="1271,699,0,0" VerticalAlignment="Top" Width="81" Background="#FF6B90DA"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="90" Margin="767,740,0,0" VerticalAlignment="Top" Width="118"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="90" Margin="885,740,0,0" VerticalAlignment="Top" Width="118"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="90" Margin="1003,740,0,0" VerticalAlignment="Top" Width="110"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="90" Margin="1112,740,0,0" VerticalAlignment="Top" Width="80"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="90" Margin="1192,740,0,0" VerticalAlignment="Top" Width="80"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="90" Margin="1271,740,0,0" VerticalAlignment="Top" Width="80"/>
-        <Label Content="Øvelse" HorizontalAlignment="Left" Margin="806,448,0,0" VerticalAlignment="Top" Foreground="White"/>
-        <Label Content="Beskrivelse" HorizontalAlignment="Left" Margin="912,448,0,0" VerticalAlignment="Top" Foreground="White"/>
-        <Label FontSize="10" Content="Muskelgruppe fokus" HorizontalAlignment="Left" Margin="1008,450,0,0" VerticalAlignment="Top" Foreground="White" Height="32" Width="105"/>
-        <Label Content="Belastning" HorizontalAlignment="Left" Margin="1118,448,0,0" VerticalAlignment="Top" Foreground="White"/>
-        <Label Content="Gentagelser" HorizontalAlignment="Left" Margin="1194,448,0,0" VerticalAlignment="Top" Foreground="White"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="90" Margin="1272,479,0,0" VerticalAlignment="Top" Width="80"/>
-        <Label Content="Pausetid" HorizontalAlignment="Left" Margin="1286,448,0,0" VerticalAlignment="Top" Foreground="White"/>
-        <Label Content="Øvelse" HorizontalAlignment="Left" Margin="806,574,0,0" VerticalAlignment="Top" Foreground="White"/>
-        <Label Content="Beskrivelse" HorizontalAlignment="Left" Margin="912,574,0,0" VerticalAlignment="Top" Foreground="White"/>
-        <Label FontSize="10" Content="Muskelgruppe fokus" HorizontalAlignment="Left" Margin="1008,576,0,0" VerticalAlignment="Top" Foreground="White" Height="32" Width="105"/>
-        <Label Content="Belastning" HorizontalAlignment="Left" Margin="1118,574,0,0" VerticalAlignment="Top" Foreground="White"/>
-        <Label Content="Gentagelser" HorizontalAlignment="Left" Margin="1194,574,0,0" VerticalAlignment="Top" Foreground="White"/>
-        <Label Content="Pausetid" HorizontalAlignment="Left" Margin="1286,574,0,0" VerticalAlignment="Top" Foreground="White"/>
-        <Label Content="Øvelse" HorizontalAlignment="Left" Margin="806,705,0,0" VerticalAlignment="Top" Foreground="White"/>
-        <Label Content="Beskrivelse" HorizontalAlignment="Left" Margin="912,705,0,0" VerticalAlignment="Top" Foreground="White"/>
-        <Label FontSize="10" Content="Muskelgruppe fokus" HorizontalAlignment="Left" Margin="1008,707,0,0" VerticalAlignment="Top" Foreground="White" Height="32" Width="105"/>
-        <Label Content="Belastning" HorizontalAlignment="Left" Margin="1118,705,0,0" VerticalAlignment="Top" Foreground="White"/>
-        <Label Content="Gentagelser" HorizontalAlignment="Left" Margin="1194,705,0,0" VerticalAlignment="Top" Foreground="White"/>
-        <Label Content="Pausetid" HorizontalAlignment="Left" Margin="1286,705,0,0" VerticalAlignment="Top" Foreground="White"/>
-        <Label Content="Bænkpres" FontSize="15" HorizontalAlignment="Left" Margin="787,514,0,0" VerticalAlignment="Top"/>
-        <Label Content="Primære muskelgruppe:&#10;Bryst og triceps&#10;Sekundær &#10;muskelgruppe: Biceps, &#10;underarm og øvre ryg." FontSize="10" HorizontalAlignment="Left" Margin="885,480,0,0" VerticalAlignment="Top"/>
-        <Label Content="60 kg x  3 sæt" FontSize="12" HorizontalAlignment="Left" Margin="1112,514,0,0" VerticalAlignment="Top"/>
-        <Label Content="8 reps" FontSize="12" HorizontalAlignment="Left" Margin="1213,514,0,0" VerticalAlignment="Top"/>
-        <Label Content="1 min" FontSize="12" HorizontalAlignment="Left" Margin="1297,514,0,0" VerticalAlignment="Top"/>
-        <Label Content="Dødløft" FontSize="15" HorizontalAlignment="Left" Margin="801,637,0,0" VerticalAlignment="Top"/>
-        <Label FontSize="9" Content="Primære muskelgruppe:&#10;Hele ryggen,&#10;lårmusklerne, baller,&#10;mave og lænd.&#10;Sekundær muskelgruppe:&#10;Bryst, underarm, &#10;læg og skulder." HorizontalAlignment="Left" Margin="885,610,0,0" VerticalAlignment="Top"/>
-        <Label Content="70 kg x  3 sæt" FontSize="12" HorizontalAlignment="Left" Margin="1112,642,0,0" VerticalAlignment="Top"/>
-        <Label Content="8 reps" FontSize="12" HorizontalAlignment="Left" Margin="1213,642,0,0" VerticalAlignment="Top"/>
-        <Label Content="1 min" FontSize="12" HorizontalAlignment="Left" Margin="1297,642,0,0" VerticalAlignment="Top"/>
-        <Label Content="Chin ups" FontSize="15" HorizontalAlignment="Left" Margin="795,766,0,0" VerticalAlignment="Top"/>
-        <Label FontSize="10" Content="Primære muskelgruppe:&#10;Rygmusklerne og biceps.&#10;Sekundær muskelgruppe:&#10;Underarm, skulder, &#10;tricepsog lænden." HorizontalAlignment="Left" Margin="885,736,0,0" VerticalAlignment="Top"/>
-        <Label Content="Krops vægt" FontSize="12" HorizontalAlignment="Left" Margin="1118,771,0,0" VerticalAlignment="Top"/>
-        <Label Content="12 reps" FontSize="12" HorizontalAlignment="Left" Margin="1205,771,0,0" VerticalAlignment="Top"/>
-        <Label Content="1 min" FontSize="12" HorizontalAlignment="Left" Margin="1297,771,0,0" VerticalAlignment="Top"/>
-        <Image Source="images/bænkpres.jpg" Margin="1000,485,246,318"/>
-        <Image Source="images/dødløft.jpg" Margin="1008,613,251,185"/>
-        <Image Source="images/chinup.png" Margin="1000,758,246,69"/>
-        <Label Foreground="White" Content="LOG AF" HorizontalAlignment="Left" Margin="78,16,0,0" VerticalAlignment="Top" Width="107" FontSize="20"/>
+
+        <ScrollViewer VerticalScrollBarVisibility="Visible" Margin="749,408,0,0">
+            <StackPanel HorizontalAlignment="Left" Height="637"  VerticalAlignment="Top" Width="593">
+                <local:Træningsprogram/>
+                <local:Træningsprogram/>
+                <local:Træningsprogram/>
+                <local:Træningsprogram/>
+                <local:Træningsprogram/>
+                <local:Træningsprogram/>
+
+            </StackPanel>
+        </ScrollViewer>
+        <Label Content="Log af" FontSize="20" Foreground="White" HorizontalAlignment="Left" Margin="83,17,0,0" VerticalAlignment="Top" Width="138"/>
     </Grid>
 </Window>

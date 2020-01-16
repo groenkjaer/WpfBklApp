@@ -13,7 +13,7 @@
         <Image HorizontalAlignment="Center" Height="154" Margin="0,23,0,0" VerticalAlignment="Top" Width="245" Source="Images/logo.png"/>
 
         <Button Style="{StaticResource RoundButtonTemplate}" Content="OK" HorizontalAlignment="Left" Height="57" Margin="753,684,0,0" VerticalAlignment="Top" Width="136" BorderBrush="#FF044C70" Background="#FF044C70" Foreground="White" FontSize="30"/>
-        <Button Style="{StaticResource RoundButtonTemplate}" Content="Opret Bruger" HorizontalAlignment="Left" Height="57" Margin="457,684,0,0" VerticalAlignment="Top" Width="207" Background="#FF044C70" Foreground="White" FontSize="30" Click="Button_Click"/>
+        <Button Style="{StaticResource RoundButtonTemplate}" Content="Opret Bruger" HorizontalAlignment="Left" Height="57" Margin="457,684,0,0" VerticalAlignment="Top" Width="207" Background="#FF044C70" Foreground="White" FontSize="30"/>
 
         <TextBlock HorizontalAlignment="Left" Height="36" Margin="457,371,0,0" TextWrapping="Wrap" Text="Brugernavn" VerticalAlignment="Top" Width="235" FontSize="20"/>
         <TextBlock HorizontalAlignment="Left" Height="36" Margin="457,517,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235" FontSize="20"><Run Text="Adgangskode"/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>

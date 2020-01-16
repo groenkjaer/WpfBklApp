@@ -55,6 +55,24 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Oprettræningsprogram.xaml.cs">
+      <DependentUpon>Oprettræningsprogram.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Rettræningsprogram.xaml.cs">
+      <DependentUpon>Rettræningsprogram.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Setræningsprogram.xaml.cs">
+      <DependentUpon>Setræningsprogram.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="stortræningsprogram%28UC%29.xaml.cs">
+      <DependentUpon>stortræningsprogram%28UC%29.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Træningsprogram med slet knap.xaml.cs">
+      <DependentUpon>Træningsprogram med slet knap.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Træningsprogram.xaml.cs">
+      <DependentUpon>Træningsprogram.xaml</DependentUpon>
+    </Compile>
     <Page Include="HovedmenuAdmin.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -83,6 +101,30 @@
     <Page Include="OpretMedlem.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Oprettræningsprogram.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Rettræningsprogram.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Setræningsprogram.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="stortræningsprogram%28UC%29.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Træningsprogram med slet knap.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Træningsprogram.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>

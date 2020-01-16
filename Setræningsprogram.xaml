@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfBklApp.Setræningsprogram"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfBklApp"
+        mc:Ignorable="d"
+        Title="Setræningsprogram" Height="785.2" Width="1368" ResizeMode="NoResize">
+    <Grid>
+        <ScrollViewer VerticalScrollBarVisibility="Visible" Margin="76,109,56.6,109">
+            <StackPanel Height="2929" Width="1210">
+            <local:stortræningsprogram_UC_/>
+            <local:stortræningsprogram_UC_/>
+            <local:stortræningsprogram_UC_/>
+            <local:stortræningsprogram_UC_/>
+            <local:stortræningsprogram_UC_/>
+            <local:stortræningsprogram_UC_/>
+            <local:stortræningsprogram_UC_/>
+            <local:stortræningsprogram_UC_/>
+            <local:stortræningsprogram_UC_/>
+            </StackPanel>
+        </ScrollViewer>
+        <Button Style="{StaticResource RoundButtonTemplate}" Margin="279,10,944.6,660" FontSize="25" Content="Annuller" Background="#FF044C70" Foreground="White"/>
+        <Button Style="{StaticResource RoundButtonTemplate}" Margin="76,10,0,0" FontSize="20" Background="#FF044C70" HorizontalAlignment="Left" Width="163" Height="79" VerticalAlignment="Top">
+            <TextBlock TextWrapping="Wrap" Foreground="White" Width="137"><Run Text="Send program til email"/></TextBlock>
+        </Button>
+    </Grid>
+</Window>

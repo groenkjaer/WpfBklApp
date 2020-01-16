@@ -10,16 +10,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WpfBklApp
 {
     /// <summary>
-    /// Interaction logic for HovedmenuAdmin.xaml
+    /// Interaction logic for Træningsprogram_med_slet_knap.xaml
     /// </summary>
-    public partial class HovedmenuAdmin : Window
+    public partial class Træningsprogram_med_slet_knap : UserControl
     {
-        public HovedmenuAdmin()
+        public Træningsprogram_med_slet_knap()
         {
             InitializeComponent();
         }
