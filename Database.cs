@@ -124,6 +124,29 @@ namespace WpfBklApp
             }
             throw new Exception();
         }
+        public static int HentAntalProgrammer() //Fillip
+        {
+            conn = new SqlConnection(ConfigurationManager.ConnectionStrings["post"].ConnectionString);
+
+            try
+            {
+                SqlCommand comm = new SqlCommand(string.Format("SELECT COUNT (Program_ID) FROM Traeningsprogram WHERE Medlem = {0}", userId), conn);
+                conn.Open();
+                SqlDataReader reader = comm.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    int result = Convert.ToInt32(reader["Antal"]);
+                    conn.Close();
+                    return result;
+                }
+                throw new Exception();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
 
         public static string UploadVaegt() //Fillip
         {
