@@ -22,6 +22,15 @@ namespace WpfBklApp
         public Setræningsprogram()
         {
             InitializeComponent();
+
+            int[] arr = Database.HentProgramId();
+
+            foreach (int i in arr)
+            {
+                stortræningsprogram_UC_ uC_ = new stortræningsprogram_UC_(i);
+                stackpanel.Children.Add(uC_);
+            }
+            
         }
     }
 }

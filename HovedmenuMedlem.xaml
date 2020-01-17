@@ -69,7 +69,7 @@
         <Label Content="Nej" FontSize="30" HorizontalAlignment="Left" Margin="1290,334,0,0" VerticalAlignment="Top" Height="51" Grid.Row="1"/>
         <Button x:Name="btnSaetMaal" Style="{StaticResource RoundButtonTemplate}" Margin="362,82,861.6,433" FontSize="25" Content="Sæt Mål" Background="#FF044C70" Foreground="White" Grid.Row="1" Click="btnSaetMaal_Click"/>
         <Button x:Name="btnGemVaegt" Style="{StaticResource RoundButtonTemplate}" Margin="362,135,861.6,542" FontSize="25" Content="Gem Vægt" Background="#FF044C70" Foreground="White" Grid.RowSpan="2" Click="btnGemVaegt_Click"/>
-        <Button Style="{StaticResource RoundButtonTemplate}" Margin="15,202,1154.6,0" FontSize="23" Content="Programpas" Background="#FF6B90DA" Foreground="White" Height="57" VerticalAlignment="Top" Grid.Row="1"/>
+        <Button Style="{StaticResource RoundButtonTemplate}" Margin="15,202,1154.6,0" FontSize="23" Content="Programpas" Background="#FF6B90DA" Foreground="White" Height="57" VerticalAlignment="Top" Grid.Row="1" Click="Button_Click"/>
         <Button Style="{StaticResource RoundButtonTemplate}" Margin="240,202,929.6,0" FontSize="23" Content="Ret programpas" Background="#FF6B90DA" Foreground="White" Height="57" VerticalAlignment="Top" Grid.Row="1"/>
         <Button Style="{StaticResource RoundButtonTemplate}" Margin="464,202,705.6,0" FontSize="21" Content="Opret programpas" Background="#FF6B90DA" Foreground="White" Height="57" VerticalAlignment="Top" Grid.Row="1" Click="Opretprogrampas_Click"/>
         <Image Source="images/logud.png" Margin="21,13,1297.6,104"/>

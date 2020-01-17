@@ -52,5 +52,12 @@ namespace WpfBklApp
             opret.Show();
             Close();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Setræningsprogram window = new Setræningsprogram();
+            window.Show();
+            Close();
+        }
     }
 }

@@ -11,7 +11,7 @@ namespace WpfBklApp
     static class Database
     {
         private static SqlConnection conn;
-        private static int userId = 2; //0
+        private static int userId = 0;
         private static string status;
         private static string maal;
         private static string vaegt;
@@ -37,7 +37,7 @@ namespace WpfBklApp
 
         public static string OpretNyBruger(string fname, string lname, string email, string kodeord1, string kodeord2, string koen, string alder) //Fillip
         {
-            conn = new SqlConnection(ConfigurationManager.ConnectionStrings["post"].ConnectionString); //setup
+            conn = new SqlConnection(ConfigurationManager.ConnectionStrings["post"].ConnectionString);
 
             if (kodeord1 == kodeord2)
             {
@@ -101,13 +101,13 @@ namespace WpfBklApp
             }
         }
 
-        public static string[] TraeningsProgram() //Fillip og Isak
+        public static string[] TraeningsProgram(int prgId) //Fillip og Isak
         {
             conn = new SqlConnection(ConfigurationManager.ConnectionStrings["post"].ConnectionString);
 
             try
             {
-                SqlCommand comm = new SqlCommand(string.Format("SELECT * FROM Traeningsprogram WHERE Medlem = {0}", userId), conn);
+                SqlCommand comm = new SqlCommand(string.Format("SELECT * FROM Traeningsprogram WHERE Program_ID = '{0}'", prgId), conn);
                 conn.Open();
                 SqlDataReader reader = comm.ExecuteReader();
 
@@ -124,13 +124,43 @@ namespace WpfBklApp
             }
             throw new Exception();
         }
+
+        public static int[] HentProgramId() //Fillip
+        {
+            int antal = HentAntalProgrammer();
+            int[] result = new int[antal];
+            conn = new SqlConnection(ConfigurationManager.ConnectionStrings["post"].ConnectionString);
+
+            try
+            {
+                SqlCommand comm = new SqlCommand(string.Format("SELECT Program_ID FROM Traeningsprogram WHERE Medlem = {0}", userId), conn);
+                conn.Open();
+                SqlDataReader reader = comm.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    for (int i = 0; i < antal; i++)
+                    {
+                        result[i] = Convert.ToInt32(reader["Program_ID"]);
+                        reader.Read();
+                    }
+                    conn.Close();
+                    return result;
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            throw new Exception();
+        }
         public static int HentAntalProgrammer() //Fillip
         {
             conn = new SqlConnection(ConfigurationManager.ConnectionStrings["post"].ConnectionString);
 
             try
             {
-                SqlCommand comm = new SqlCommand(string.Format("SELECT COUNT (Program_ID) FROM Traeningsprogram WHERE Medlem = {0}", userId), conn);
+                SqlCommand comm = new SqlCommand(string.Format("SELECT COUNT (Program_ID) AS Antal FROM Traeningsprogram WHERE Medlem = '{0}'", userId), conn);
                 conn.Open();
                 SqlDataReader reader = comm.ExecuteReader();
 

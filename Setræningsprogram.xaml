@@ -8,16 +8,7 @@
         Title="Setræningsprogram" Height="785.2" Width="1368" ResizeMode="NoResize">
     <Grid>
         <ScrollViewer VerticalScrollBarVisibility="Visible" Margin="76,109,56.6,109">
-            <StackPanel Height="2929" Width="1210">
-            <local:stortræningsprogram_UC_/>
-            <local:stortræningsprogram_UC_/>
-            <local:stortræningsprogram_UC_/>
-            <local:stortræningsprogram_UC_/>
-            <local:stortræningsprogram_UC_/>
-            <local:stortræningsprogram_UC_/>
-            <local:stortræningsprogram_UC_/>
-            <local:stortræningsprogram_UC_/>
-            <local:stortræningsprogram_UC_/>
+            <StackPanel Name="stackpanel" Height="2929" Width="1210">
             </StackPanel>
         </ScrollViewer>
         <Button Style="{StaticResource RoundButtonTemplate}" Margin="279,10,944.6,660" FontSize="25" Content="Annuller" Background="#FF044C70" Foreground="White"/>

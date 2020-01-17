@@ -20,7 +20,7 @@ namespace WpfBklApp
     /// </summary>
     public partial class stortræningsprogram_UC_ : UserControl
     {
-        public stortræningsprogram_UC_()
+        public stortræningsprogram_UC_(int id)
         {
             InitializeComponent();
             //programlabel txt = new programlabel();
@@ -53,37 +53,39 @@ namespace WpfBklApp
             //txt.TextblockMe.FontSize = 30;
             //Grdpausetid.Children.Add(txt6);
 
-            string[] arr = Database.TraeningsProgram();
+                string[] arr = Database.TraeningsProgram(id);
 
-            programlabel txt = new programlabel();
-            txt.TextblockMe.Text = arr[0];
-            txt.TextblockMe.FontSize = 30;
-            Grdoevelse.Children.Add(txt);
+                programlabel txt = new programlabel();
+                txt.TextblockMe.Text = arr[0];
+                txt.TextblockMe.FontSize = 30;
+                Grdoevelse.Children.Add(txt);
 
-            programlabel txt2 = new programlabel();
-            txt2.TextblockMe.Text = arr[1];
-            txt2.TextblockMe.FontSize = 20;
-            Grdbeskrivelse.Children.Add(txt2);
+                programlabel txt2 = new programlabel();
+                txt2.TextblockMe.Text = arr[1];
+                txt2.TextblockMe.FontSize = 20;
+                Grdbeskrivelse.Children.Add(txt2);
 
-            programlabel txt3 = new programlabel();
-            txt3.TextblockMe.Text = arr[2]; 
-            txt.TextblockMe.FontSize = 30;
-            Grdmuskelgruppefokus.Children.Add(txt3);
+                programlabel txt3 = new programlabel();
+                txt3.TextblockMe.Text = arr[2];
+                txt.TextblockMe.FontSize = 30;
+                Grdmuskelgruppefokus.Children.Add(txt3);
 
-            programlabel txt4 = new programlabel();
-            txt4.TextblockMe.Text = arr[3] + " x " + arr[6] + " sæt";
-            txt.TextblockMe.FontSize = 20;
-            Grdbelastning.Children.Add(txt4);
+                programlabel txt4 = new programlabel();
+                txt4.TextblockMe.Text = arr[3] + " x " + arr[6] + " sæt";
+                txt.TextblockMe.FontSize = 20;
+                Grdbelastning.Children.Add(txt4);
 
-            programlabel txt5 = new programlabel();
-            txt5.TextblockMe.Text = arr[4];
-            txt.TextblockMe.FontSize = 30;
-            Grdgentagelser.Children.Add(txt5);
+                programlabel txt5 = new programlabel();
+                txt5.TextblockMe.Text = arr[4];
+                txt.TextblockMe.FontSize = 30;
+                Grdgentagelser.Children.Add(txt5);
 
-            programlabel txt6 = new programlabel();
-            txt6.TextblockMe.Text = arr[5];
-            txt.TextblockMe.FontSize = 30;
-            Grdpausetid.Children.Add(txt6);
+                programlabel txt6 = new programlabel();
+                txt6.TextblockMe.Text = arr[5];
+                txt.TextblockMe.FontSize = 30;
+                Grdpausetid.Children.Add(txt6);
+
+            
         }
 
     }
