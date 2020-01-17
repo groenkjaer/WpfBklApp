@@ -45,5 +45,12 @@ namespace WpfBklApp
                 MessageBox.Show(Database.UploadVaegt());
             }
         }
+
+        private void Opretprogrampas_Click(object sender, RoutedEventArgs e)
+        {
+            Oprettræningsprogram opret = new Oprettræningsprogram();
+            opret.Show();
+            Close();
+        }
     }
 }

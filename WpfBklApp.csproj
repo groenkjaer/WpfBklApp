@@ -63,6 +63,9 @@
     <Compile Include="Oprettræningsprogram.xaml.cs">
       <DependentUpon>Oprettræningsprogram.xaml</DependentUpon>
     </Compile>
+    <Compile Include="programlabel.xaml.cs">
+      <DependentUpon>programlabel.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Rettræningsprogram.xaml.cs">
       <DependentUpon>Rettræningsprogram.xaml</DependentUpon>
     </Compile>
@@ -113,6 +116,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Oprettræningsprogram.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="programlabel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

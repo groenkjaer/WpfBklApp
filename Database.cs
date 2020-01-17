@@ -11,7 +11,7 @@ namespace WpfBklApp
     static class Database
     {
         private static SqlConnection conn;
-        private static int userId = 0;
+        private static int userId = 2; //0
         private static string status;
         private static string maal;
         private static string vaegt;
@@ -99,6 +99,30 @@ namespace WpfBklApp
             {
                 return "Kunne ikke oprette forbindelse, kontakt en administrator. Fejlkode: " + e.Message;
             }
+        }
+
+        public static string[] TraeningsProgram() //Fillip og Isak
+        {
+            conn = new SqlConnection(ConfigurationManager.ConnectionStrings["post"].ConnectionString);
+
+            try
+            {
+                SqlCommand comm = new SqlCommand(string.Format("SELECT * FROM Traeningsprogram WHERE Medlem = {0}", userId), conn);
+                conn.Open();
+                SqlDataReader reader = comm.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    string[] result = {reader["Oevelse"].ToString(), reader["Beskrivelse"].ToString(), reader["Muskelgruppe"].ToString(), reader["Belastning"].ToString(), reader["Gentagelser"].ToString(), reader["Pausetid"].ToString(), reader["Set"].ToString()};
+                    conn.Close();
+                    return result;
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            throw new Exception();
         }
 
         public static string UploadVaegt() //Fillip

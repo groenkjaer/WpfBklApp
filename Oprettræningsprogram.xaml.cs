@@ -22,6 +22,26 @@ namespace WpfBklApp
         public Oprettræningsprogram()
         {
             InitializeComponent();
+            
         }
+
+        private void Annuller_Click(object sender, RoutedEventArgs e)
+        {
+            HovedmenuMedlem hovedmenu = new HovedmenuMedlem();
+            hovedmenu.Show();
+            Close();
+        }
+
+        private void GemProgram_Click(object sender, RoutedEventArgs e)
+        {
+          
+
+        }
+
+        private void OpretNyØvelse_click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
     }
 }

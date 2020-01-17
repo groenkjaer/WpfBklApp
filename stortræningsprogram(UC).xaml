@@ -5,35 +5,48 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WpfBklApp"
              mc:Ignorable="d" Height="216.578" Width="1209.307">
-    <Grid Margin="0,0,-0.4,-0.2">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition Width="0*"/>
-        </Grid.ColumnDefinitions>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="64" Margin="0,1,0,0" VerticalAlignment="Top" Width="244" Background="#FF6B90DA">
-            <Label FontSize="25" Content="Øvelse" Margin="76.2,5.2,80.2,9.2" Foreground="White"/>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="64" Margin="243,1,0,0" VerticalAlignment="Top" Width="245" Background="#FF6B90DA">
-            <Label FontSize="25" Content="Beskrivelse" Margin="0,4.2,57,9.2" Foreground="White" HorizontalAlignment="Right" Width="132"/>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="64" Margin="716,1,0,0" VerticalAlignment="Top" Width="166" Background="#FF6B90DA">
-            <Label FontSize="25" Content="Belastning" Foreground="White" Margin="17.2,7.2,20.6,5.2"/>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="64" Margin="882,1,0,0" VerticalAlignment="Top" Width="162" Background="#FF6B90DA">
-            <Label FontSize="25" Content="Gentagelser" Foreground="White" Margin="3.2,9.2,-1.2,4.2"/>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="64" Margin="1043,1,0,0" VerticalAlignment="Top" Width="166" Background="#FF6B90DA">
-            <Label FontSize="25" Content="Pausetid" Foreground="White" Margin="30.2,6.2,20.6,9.2"/>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="152" Margin="0,65,0,0" VerticalAlignment="Top" Width="244"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="152" Margin="243,65,0,0" VerticalAlignment="Top" Width="245"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="152" Margin="488,65,0,0" VerticalAlignment="Top" Width="229"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="152" Margin="716,65,0,0" VerticalAlignment="Top" Width="166"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="152" Margin="882,65,0,0" VerticalAlignment="Top" Width="162"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="152" Margin="1043,65,0,0" VerticalAlignment="Top" Width="166"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="64" Margin="488,1,0,0" VerticalAlignment="Top" Width="229" Background="#FF6B90DA">
-            <Label FontSize="23" Content="Muskelgruppe fokus" Margin="3.2,7.2,3.6,6.8" Foreground="White"/>
-        </Border>
+  <Grid Margin="0,0,-0.4,-0.2" Background="White">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition/>
+      <ColumnDefinition Width="0*"/>
+    </Grid.ColumnDefinitions>
 
+    <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="64" Margin="0,1,0,0" VerticalAlignment="Top" Width="244" Background="#FF6B90DA">
+      <Label FontSize="25" Content="Øvelse" Margin="76.2,5.2,80.2,9.2" Foreground="White"/>
+    </Border>
+    <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="64" Margin="243,1,0,0" VerticalAlignment="Top" Width="245" Background="#FF6B90DA">
+      <Label FontSize="25" Content="Beskrivelse" Margin="0,4.2,57,9.2" Foreground="White" HorizontalAlignment="Right" Width="132"/>
+    </Border>
+    <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="64" Margin="716,1,0,0" VerticalAlignment="Top" Width="166" Background="#FF6B90DA">
+      <Label FontSize="25" Content="Belastning" Foreground="White" Margin="17.2,7.2,20.6,5.2"/>
+    </Border>
+    <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="64" Margin="882,1,0,0" VerticalAlignment="Top" Width="162" Background="#FF6B90DA">
+      <Label FontSize="25" Content="Gentagelser" Foreground="White" Margin="3.2,9.2,-1.2,4.2"/>
+    </Border>
+    <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="64" Margin="1043,1,0,0" VerticalAlignment="Top" Width="166" Background="#FF6B90DA">
+      <Label FontSize="25" Content="Pausetid" Foreground="White" Margin="30.2,6.2,20.6,9.2"/>
+    </Border>
+    <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="64" Margin="488,1,0,0" VerticalAlignment="Top" Width="229" Background="#FF6B90DA">
+      <Label FontSize="23" Content="Muskelgruppe fokus" Margin="3.2,7.2,3.6,6.8" Foreground="White"/>
+    </Border>
+    <Grid x:Name="Grdoevelse" HorizontalAlignment="Left" Height="152" Margin="0,65,0,0" VerticalAlignment="Top" Width="243" Background="White">
+      <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="152" VerticalAlignment="Top" Width="243"/>
     </Grid>
+    <Grid x:Name="Grdbeskrivelse" HorizontalAlignment="Left" Height="152" VerticalAlignment="Top" Width="245" Margin="243,65,0,0">
+      <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="152" VerticalAlignment="Top" Width="245"/>
+    </Grid>
+    <Grid x:Name="Grdmuskelgruppefokus" HorizontalAlignment="Left" Height="152" Margin="488,65,0,0" VerticalAlignment="Top" Width="228">
+      <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="152" VerticalAlignment="Top" Width="228"/>
+    </Grid>
+    <Grid x:Name="Grdbelastning" HorizontalAlignment="Left" Height="152" Margin="716,65,0,0" VerticalAlignment="Top" Width="166">
+      <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="152" VerticalAlignment="Top" Width="166"/>
+    </Grid>
+    <Grid x:Name="Grdgentagelser" HorizontalAlignment="Left" Height="152" Margin="882,65,0,0" VerticalAlignment="Top" Width="161">
+      <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="152" VerticalAlignment="Top" Width="161"/>
+    </Grid>
+    <Grid x:Name="Grdpausetid" HorizontalAlignment="Left" Height="152" Margin="1043,65,0,0" VerticalAlignment="Top" Width="166">
+      <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="152" VerticalAlignment="Top" Width="166"/>
+    </Grid>
+
+  </Grid>
 </UserControl>

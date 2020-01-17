@@ -8,20 +8,11 @@
         Title="Oprettræningsprogram"  Height="785.2" Width="1368" ResizeMode="NoResize">
     <Grid>
         <ScrollViewer VerticalScrollBarVisibility="Visible" Margin="76,109,56.6,109">
-            <StackPanel Height="2929" Width="1210">
-                <local:stortræningsprogram_UC_/>
-                <local:stortræningsprogram_UC_/>
-                <local:stortræningsprogram_UC_/>
-                <local:stortræningsprogram_UC_/>
-                <local:stortræningsprogram_UC_/>
-                <local:stortræningsprogram_UC_/>
-                <local:stortræningsprogram_UC_/>
-                <local:stortræningsprogram_UC_/>
-                <local:stortræningsprogram_UC_/>
+            <StackPanel x:Name="myStackPanel" Height="auto" Width="1210">
             </StackPanel>
         </ScrollViewer>
-        <Button Style="{StaticResource RoundButtonTemplate}" Margin="546,10,677.6,667" FontSize="25" Content="Annuller" Background="#FF044C70" Foreground="White"/>
-        <Button Style="{StaticResource RoundButtonTemplate}" Margin="76,10,1110.6,667" FontSize="25" Content="Gem program" Background="#FF044C70" Foreground="White"/>
-        <Button Style="{StaticResource RoundButtonTemplate}" Margin="294,10,849.6,667" FontSize="25" Content="Opret ny øvelse" Background="#FF044C70" Foreground="White"/>
+        <Button Style="{StaticResource RoundButtonTemplate}" Margin="546,10,677.6,667" FontSize="25" Content="Annuller" Background="#FF044C70" Foreground="White" Click="Annuller_Click"/>
+        <Button Style="{StaticResource RoundButtonTemplate}" Margin="76,10,1110.6,667" FontSize="25" Content="Gem program" Background="#FF044C70" Foreground="White" Click="GemProgram_Click"/>
+        <Button Style="{StaticResource RoundButtonTemplate}" Margin="294,10,849.6,667" FontSize="25" Content="Opret ny øvelse" Background="#FF044C70" Foreground="White" Click="OpretNyØvelse_click"/>
     </Grid>
 </Window>
