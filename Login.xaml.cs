@@ -22,6 +22,14 @@ namespace WpfBklApp
         public Login()
         {
             InitializeComponent();
+
+            if (SerialCommunication.ComPortIsSet == false)
+            {
+                Window com = new ComValg();
+                com.Topmost = true;
+                com.Show();
+            }
+            
         }
 
         private void goToOpretBruger_Click(object sender, RoutedEventArgs e)

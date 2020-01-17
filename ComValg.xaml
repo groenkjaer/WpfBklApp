@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfBklApp.ComValg"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfBklApp"
+        mc:Ignorable="d"
+        Title="ComValg" Height="200" Width="300" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Vælg Com" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <ComboBox x:Name="cmbComs" HorizontalAlignment="Center" VerticalAlignment="Top" Width="120">
+            </ComboBox>
+            <Button Width="40" Height="22" HorizontalAlignment="Right" VerticalAlignment="Top" Content="OK" Click="Button_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

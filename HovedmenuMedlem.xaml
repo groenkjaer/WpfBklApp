@@ -67,14 +67,14 @@
         <Slider HorizontalAlignment="Left" IsSnapToTickEnabled="True" Margin="1169,352.8,0,0" VerticalAlignment="Top" Height="32" Width="106" Grid.Row="1" Maximum="1" SmallChange="1"/>
         <Label Content="Ja" FontSize="30" HorizontalAlignment="Left" Margin="1114,334,0,0" VerticalAlignment="Top" Height="45" Grid.Row="1"/>
         <Label Content="Nej" FontSize="30" HorizontalAlignment="Left" Margin="1290,334,0,0" VerticalAlignment="Top" Height="51" Grid.Row="1"/>
-        <Button Style="{StaticResource RoundButtonTemplate}" Margin="362,82,861.6,433" FontSize="25" Content="Sæt Vægt" Background="#FF044C70" Foreground="White" Grid.Row="1"/>
-        <Button Style="{StaticResource RoundButtonTemplate}" Margin="362,135,861.6,542" FontSize="25" Content="Gem Vægt" Background="#FF044C70" Foreground="White" Grid.RowSpan="2"/>
+        <Button x:Name="btnSaetMaal" Style="{StaticResource RoundButtonTemplate}" Margin="362,82,861.6,433" FontSize="25" Content="Sæt Mål" Background="#FF044C70" Foreground="White" Grid.Row="1" Click="btnSaetMaal_Click"/>
+        <Button x:Name="btnGemVaegt" Style="{StaticResource RoundButtonTemplate}" Margin="362,135,861.6,542" FontSize="25" Content="Gem Vægt" Background="#FF044C70" Foreground="White" Grid.RowSpan="2" Click="btnGemVaegt_Click"/>
         <Button Style="{StaticResource RoundButtonTemplate}" Margin="15,202,1154.6,0" FontSize="23" Content="Programpas" Background="#FF6B90DA" Foreground="White" Height="57" VerticalAlignment="Top" Grid.Row="1"/>
         <Button Style="{StaticResource RoundButtonTemplate}" Margin="240,202,929.6,0" FontSize="23" Content="Ret programpas" Background="#FF6B90DA" Foreground="White" Height="57" VerticalAlignment="Top" Grid.Row="1"/>
         <Button Style="{StaticResource RoundButtonTemplate}" Margin="464,202,705.6,0" FontSize="21" Content="Opret programpas" Background="#FF6B90DA" Foreground="White" Height="57" VerticalAlignment="Top" Grid.Row="1"/>
         <Image Source="images/logud.png" Margin="21,13,1297.6,104"/>
-        <TextBox FontSize="25" HorizontalAlignment="Left" Height="79" Margin="21,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="247" Background="#FF64686A" Foreground="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.RowSpan="2"/>
-        <TextBox FontSize="25" HorizontalAlignment="Left" Height="79" Margin="21,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="247" Background="#FF64686A" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="1"/>
+        <TextBox x:Name="txtVaegt" FontSize="25" HorizontalAlignment="Left" Height="79" Margin="21,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="247" Background="#FF64686A" Foreground="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.RowSpan="2" IsReadOnly="True"/>
+        <TextBox x:Name="txtMaal" FontSize="25" HorizontalAlignment="Left" Height="79" Margin="21,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="247" Background="#FF64686A" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="1"/>
 
 
     </Grid>

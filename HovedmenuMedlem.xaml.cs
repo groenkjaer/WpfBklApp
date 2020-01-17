@@ -22,7 +22,28 @@ namespace WpfBklApp
         public HovedmenuMedlem()
         {
             InitializeComponent();
-            //Test
+        }
+
+        private void btnGemVaegt_Click(object sender, RoutedEventArgs e)
+        {
+            //Database.Vaegt = SerialCommunication.HentVaegt() + "KG"; TEST
+            Database.Vaegt = "400kg";
+            txtVaegt.Text = Database.Vaegt;
+
+            if (!string.IsNullOrEmpty(Database.Maal) && !string.IsNullOrEmpty(Database.Vaegt))
+            {
+                MessageBox.Show(Database.UploadVaegt());
+            }
+        }
+
+        private void btnSaetMaal_Click(object sender, RoutedEventArgs e)
+        {
+            Database.Maal = txtMaal.Text;
+
+            if (!string.IsNullOrEmpty(Database.Maal) && !string.IsNullOrEmpty(Database.Vaegt))
+            {
+                MessageBox.Show(Database.UploadVaegt());
+            }
         }
     }
 }

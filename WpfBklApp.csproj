@@ -56,6 +56,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ComValg.xaml.cs">
+      <DependentUpon>ComValg.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Database.cs" />
     <Compile Include="Oprettræningsprogram.xaml.cs">
       <DependentUpon>Oprettræningsprogram.xaml</DependentUpon>
@@ -63,6 +66,7 @@
     <Compile Include="Rettræningsprogram.xaml.cs">
       <DependentUpon>Rettræningsprogram.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SerialCommunication.cs" />
     <Compile Include="Setræningsprogram.xaml.cs">
       <DependentUpon>Setræningsprogram.xaml</DependentUpon>
     </Compile>
@@ -75,6 +79,10 @@
     <Compile Include="Træningsprogram.xaml.cs">
       <DependentUpon>Træningsprogram.xaml</DependentUpon>
     </Compile>
+    <Page Include="ComValg.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="HovedmenuAdmin.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

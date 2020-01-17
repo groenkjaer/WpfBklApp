@@ -13,6 +13,8 @@ namespace WpfBklApp
         private static SqlConnection conn;
         private static int userId = 0;
         private static string status;
+        private static string maal;
+        private static string vaegt;
 
         public static int UserId
         {
@@ -22,8 +24,18 @@ namespace WpfBklApp
         {
             get { return status; }
         }
+        public static string Maal
+        {
+            get { return maal; }
+            set { maal = value; }
+        }
+        public static string Vaegt
+        {
+            get { return vaegt; }
+            set { vaegt = value; }
+        }
 
-        public static string OpretNyBruger(string fname, string lname, string email, string kodeord1, string kodeord2, string koen, string alder) //Fillips metode
+        public static string OpretNyBruger(string fname, string lname, string email, string kodeord1, string kodeord2, string koen, string alder) //Fillip
         {
             conn = new SqlConnection(ConfigurationManager.ConnectionStrings["post"].ConnectionString); //setup
 
@@ -56,7 +68,7 @@ namespace WpfBklApp
             }
         }
 
-        public static string Login(string email, string kodeord) //Fillips metode
+        public static string Login(string email, string kodeord) //Fillip
         {
             conn = new SqlConnection(ConfigurationManager.ConnectionStrings["post"].ConnectionString);
 
@@ -89,5 +101,29 @@ namespace WpfBklApp
             }
         }
 
+        public static string UploadVaegt() //Fillip
+        {
+            conn = new SqlConnection(ConfigurationManager.ConnectionStrings["post"].ConnectionString);
+
+            try
+            {
+                SqlCommand comm = new SqlCommand(string.Format("INSERT INTO Vaegt(Dato, Maal, Vaegt, Medlem) VALUES(GETDATE(),'{0}', '{1}', '{2}')", maal, vaegt, userId), conn);
+                conn.Open();
+
+                if (comm.ExecuteNonQuery() == 1)
+                {
+                    conn.Close();
+                    return "Mål og vægt er gemt";
+                }
+                else
+                {
+                    return "Kunne ikke uploade vægt og mål";
+                }
+            }
+            catch (Exception e)
+            {
+                return e.Message;
+            }
+        }
     }
 }
